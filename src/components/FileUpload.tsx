@@ -4,7 +4,6 @@ import { Upload, FileText } from "lucide-react";
 export default function VisioViewer() {
   const [fileUrl, setFileUrl] = useState<string>("");
 
-  // لما المستخدم يختار ملف من جهازه
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
